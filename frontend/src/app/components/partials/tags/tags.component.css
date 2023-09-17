@@ -30,6 +30,8 @@ div a{
   padding: 0.3rem 1rem;
   margin: 0.2rem 0.15rem;
   border-radius: 10rem;
+  border-color: #e72929;
+
   font-weight: 600;
   color: #f0f0f0;
 }
