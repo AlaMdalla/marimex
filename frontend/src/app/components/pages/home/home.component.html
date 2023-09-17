@@ -1,0 +1,53 @@
+<section class="main">
+    <div>
+        <h2>Marimex<br></h2>
+        <h3>Vente et commercialisation d’une gamme complète d’outils et de matériels pour la marbrerie</h3>
+      </div>
+        <a href="#all-product" >Nos produits</a>
+      
+          
+      
+   
+</section>
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found 
+[visibale]="!marbles || !marbles.length" resetLinkText="Rest Search"></app-not-found>
+
+<ul id="all-product">
+    <li *ngFor="let marble of marbles | paginate: { itemsPerPage: itemsPerPage, currentPage: p }">
+        <a routerLink="/marble/{{marble.id}}">
+          <img [src]="marble.imageurl" [alt]="marble.name"/>
+          <div class="content">
+            <div class="name">
+                {{marble.name}}
+            </div>
+            <span class="favorite {{marble.favorite?'':'not'}}">
+                ❤
+            </span>
+            <div class="stars">
+              <star-rating [stars]="marble.stars" />
+            </div>
+            <div class="product-item-footer">
+              <div class="description">
+                <span *ngFor="let description of marble.descriptions">
+                  {{description}}
+                </span>
+              </div>
+    
+            
+            </div>
+    
+           
+ 
+          </div> 
+        </a>
+
+    </li>
+</ul>
+<a id="pagination-anchor"></a>
+<div class="pagination-container" > <pagination-controls (pageChange)="onPageChange($event)" class="my-pagination"></pagination-controls></div>
+<app-body-elements></app-body-elements>
+<contact-us></contact-us>
+
+<app-footer></app-footer>

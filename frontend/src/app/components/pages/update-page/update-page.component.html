@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="details">
+     <app-title title="Register"></app-title> 
+     <form [formGroup]="updateForm" (ngSubmit)="submit()">
+      <text-input
+      [control]="fc.name"
+      [showErrorwhen]="isSubmited"
+      label="Name">
+    `</text-input>
+        <text-input
+        [control]="fc.price"
+        [showErrorwhen]="isSubmited "
+        type="Number"
+        label="price"
+        ></text-input> 
+         <text-input
+        [control]="fc.tags"
+        [showErrorwhen]="isSubmited "
+        type="text"
+        label="tags"
+        ></text-input>  
+        <text-input
+        [control]="fc.favorite"
+        [showErrorwhen]="isSubmited "
+        type="Number"
+        label="favorite"
+        ></text-input>
+        <text-input
+        [control]="fc.stars"
+        [showErrorwhen]="isSubmited "
+        type="Number"
+        label="stars"
+        ></text-input>
+        <text-input
+        [control]="fc.imageurl"
+        [showErrorwhen]="isSubmited "
+        type="text"
+        label="imageurl"
+        ></text-input>
+        <text-input
+        [control]="fc.descriptions"
+        [showErrorwhen]="isSubmited "
+        type="text"
+        label="descriptions"
+        ></text-input>
+                
+  
+     <default-button text="Update"></default-button>
+  <div class="Login">
+    Already a User? &nbsp;
+    <a routerLink="/login" [queryParams]="{returnURL: returnURL }">
+        Login Here
+    </a>
+  </div>
+   
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,46 @@
+div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div a{
+  background-color: #f0f0f0;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  color: #e72929;
+}
+/* Optional: Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  div a {
+    padding: 0.2rem 0.8rem; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-button {
+  background-color: #e72929;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.pagination-button:hover {
+  background-color: #e72929;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Add this CSS rule to move the "Previous" button to the left */
+.pagination-button.previous {
+  order: -1; /* Moves the button to the start of the flex container */
+}
+

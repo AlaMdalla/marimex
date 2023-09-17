@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<header>
+    <div class="container">
+        <a *ngIf="!isAdmin" routerLink="/" class="logo">Marimex!</a>
+        <a *ngIf="isAdmin" routerLink="/admin" class="logo">Marimex!</a>
+        <nav>
+            <ul>
+                <li *ngIf="!isAuth" >
+                    <a   routerLink="/login">Login</a>
+                </li>
+                <li  *ngIf="isAuth" class="menu-container">
+                    <a routerLink="/dashboard"> {{user.name}}</a>
+                    <div class="menu">
+                        <a routerLink="/orders">Orders</a>
+                        <a routerLink="/logout" (click)="logout()"  >logout</a>
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/cart-page">
+                        Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                    </a>  
+                </li>
+                <li  >
+                    <a href="tel:+21670319848" class="phone-link">
+                        <i class="fas fa-phone phone-icon"></i>
+                        70 319 848
+                      </a>
+                </li>
+            </ul>
+            
+        </nav>
+    </div>
+</header>

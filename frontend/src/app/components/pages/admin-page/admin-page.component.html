@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-cieJ2weZJOJXeq2PMTeqzTF82OcISRPac47cW3Bk2OKumA6S/FpFjGBMOJ4fURWH3Q8U5yU6D0c1K5HJ+AnAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div *ngIf="isAdmin">
+  
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found 
+[visibale]="!marbles || !marbles.length" resetLinkText="Rest Search"></app-not-found>
+
+<ul >
+    <li *ngFor="let marble of marbles | paginate: { itemsPerPage: itemsPerPage, currentPage: p }">
+        <a>
+          <img [src]="marble.imageurl" [alt]="marble.name"/>
+          <div class="content">
+            <div class="name">
+                {{marble.name}}
+            </div>
+            <span class="favorite {{marble.favorite?'':'not'}}">
+                ❤
+            </span>
+            <div class="stars">
+              <star-rating [stars]="marble.stars" />
+            </div>
+            <div class="product-item-footer">
+              <div class="description">
+                <span *ngFor="let description of marble.descriptions">
+                  {{description}}
+                </span>
+             
+              </div>
+    
+            
+            </div>
+    
+            <div class="price">
+              <span>
+                {{marble.price }}DT
+                <button (click)="deleteMarble(marble.id)" class="delete-button">
+                    <i class="fas fa-trash"></i> 
+                  </button>
+                  <button (click)="navigateToUpdateMarble(marble.id)">
+                    <i class="fas fa-pen"></i> 
+                  </button>
+                  
+                </span>
+                </div>
+               
+          </div> 
+        </a>
+
+    </li>
+</ul>
+<a id="pagination-anchor"></a>
+<div class="pagination-container" > <pagination-controls (pageChange)="onPageChange($event)" class="my-pagination"></pagination-controls></div>
+<marbels-add></marbels-add>
+</div>

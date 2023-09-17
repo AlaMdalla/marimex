@@ -1,0 +1,218 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li a{
+    height: 22.5rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+  }
+  
+  li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  li a img{
+    object-fit: cover;
+    height: 14.5rem;
+  }
+  
+  .content{
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+  }
+  
+  .favorite{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .favorite.not{
+    color: grey;
+  }
+  
+  .stars{
+    margin-bottom: 0.2rem;
+  }
+  
+  .product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .description{
+    flex: 9;
+  }
+  
+  .description span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: grey;
+    margin-right: 0.3rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+  }
+  
+
+  
+  .price{
+    position: absolute;
+    bottom: 0;
+    left: 0.9rem;
+    background: white;
+    padding: 0.3rem 100% 0 0;
+    color: #414141;
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+  }
+
+  .pagination-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+
+  
+  .my-pagination ::ng-deep .ngx-pagination .current {
+    background: #e72929;
+    border-radius: 50%;
+  }
+  .my-pagination ::ng-deep .ngx-pagination li :hover{
+    border-radius: 20%;
+    
+  }
+
+  .my-pagination ::ng-deep .ngx-pagination li {
+  
+    margin: 10px 10px;
+  }
+  .my-pagination ::ng-deep .ngx-pagination .current:hover {
+    background: #e72929;
+
+    border-radius: 50%;
+  }.main {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/Disque-meuleuse.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: changeBackground 9s infinite; /* 3 images x 3 seconds */
+}
+
+@keyframes changeBackground {
+    0%, 100% {
+        background-image: url(images/Disque-meuleuse.jpg);
+    }
+    33.33% {
+        background-image: url(images/Fotolia_419146_S.jpg);
+    }
+    66.66% {
+        background-image: url(images/plaquette-allogaragemobile.jpg);
+    }
+}
+
+/* Rest of your styling */
+
+
+.main h2 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 1000;
+    text-align: center;
+    margin: 0;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main a {
+    color: #fff;
+    background-color: #e72929;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn:hover {
+    background-color: #b30b0b;
+}
+@media (max-width: 768px){
+
+
+
+/* Rest of your styling */
+
+
+.main h2 {
+    font-size: 3em;
+    font-weight: 800;
+
+}
+
+.main h3 {
+    
+    font-size: 1,5em;
+    font-weight: 600;
+  
+}
+
+.main a {
+    color: #fff;
+    background-color: #e72929;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn:hover {
+    background-color: #b30b0b;
+}
+
+}

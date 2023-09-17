@@ -1,0 +1,183 @@
+* {
+  justify-content: center;
+  width: 80%;
+
+
+}
+
+.Contact_Form {
+  background: url(images/Logo-Font.jpg) no-repeat;
+  width: 83%;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3em;
+  margin-left: 8em;
+
+}
+
+.overlay{
+  width: 200%;
+  background-color:  rgba(0, 0, 0, 0.6);
+
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+
+}
+.info {
+  padding: 2em; /* Add some padding to the content */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: aliceblue;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  max-width: 70%; /* Limit the width of the info section */
+}
+
+/* Add some spacing between the elements within the info section */
+.info h2,
+.info p {
+  margin-bottom: 1rem;
+}
+
+/* Style the contact details */
+.info h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Style the address and phone details */
+.info p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Style the email and website links */
+.info a {
+  color: #4d8cff;
+  text-decoration: none;
+}
+
+/* Change link color on hover */
+.info a:hover {
+  color: #2b5db0;
+}
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+.default-button {
+  background-color: #e72929;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+
+.default-button:hover {
+  background-color: #b30b0b;
+}
+
+@media (max-width: 768px) {
+  
+  .Contact_Form {
+    background: url(images/Logo1-Font.jpg) no-repeat;
+
+  width: 100%;
+  margin-left: 0;
+
+  background-size: 170%;
+  display: block;
+  }
+  * {
+
+    width: 100%;
+  
+  
+  }
+  .overlay{
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.6);
+  padding-top: 4rem;
+    background-size: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+  
+    border-radius: 10px;
+  
+  }
+  .info {
+    width: 70%;
+    display: inline-block; /* Add flex display to create a horizontal layout */
+    justify-content: space-between; /* Space items evenly on the horizontal axis */
+    align-items: center; /* Center items vertically */
+    margin: 20px;
+    margin-left: 4em;
+
+  }
+  
+  .container {
+
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 4em;
+  }
+  .details{
+    
+      padding-right: 20em;
+      justify-content: center;
+      padding: 0 20px;
+     
+    }
+    .info {
+      padding: 1em; /* Reduce padding for smaller screens */
+      max-width: 80%; /* Adjust the maximum width as needed */
+    }
+  
+    /* Reduce font sizes for smaller screens */
+    .info h2 {
+      font-size: 1.2rem;
+    }
+  
+    .info p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem; /* Reduce margin for smaller screens */
+    }
+  
+    .info a {
+      font-size: 0.9rem;
+    }
+
+
+  }
+  
+  
+  
+  
+  
+  

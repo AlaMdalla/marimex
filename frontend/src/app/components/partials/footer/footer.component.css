@@ -1,0 +1,63 @@
+/* app-footer.component.css */
+.professional-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+   
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px; /* Adjust the logo size as needed */
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-social ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .footer-links ul li a,
+  .footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links ul li a:hover,
+  .footer-social ul li a:hover {
+    color: #ff6b6b;
+  }
+  
+  .footer-social ul li a {
+    font-size: 20px;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    height: 450;
+    border: 1px solid #ddd; 
+  }
+  .custom-map {
+    width: 100%; /* Adjust the map width to fit the container */
+    height: 150px; /* Set the height of the map within the container */
+  }
