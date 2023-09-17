@@ -4,7 +4,9 @@
 
 
 }
-
+#title{
+  color: #ffffff;
+}
 .Contact_Form {
   background: url(images/Logo-Font.jpg) no-repeat;
   width: 83%;
