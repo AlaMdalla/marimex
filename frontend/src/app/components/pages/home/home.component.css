@@ -112,7 +112,7 @@ ul{
     border-radius: 50%;
   }.main {
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,7 @@ ul{
         background-image: url(images/Disque-meuleuse.jpg);
     }
     33.33% {
-        background-image: url(images/Fotolia_419146_S.jpg);
+        background-image: url(https://www.lesitedujardinier.fr/wp-content/uploads/2020/02/meilleur-ponceuse-a-bande-4-1920x500.jpg);
     }
     66.66% {
         background-image: url(images/plaquette-allogaragemobile.jpg);
@@ -138,23 +138,33 @@ ul{
 
 /* Rest of your styling */
 
+.overlay{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+     width: 100%;
 
+    min-height: 60vh;
+}
 .main h2 {
     color: #fff;
-    font-size: 4em;
-    font-weight: 1000;
+    font-size: 5em;
+    font-weight: 2000;
     text-align: center;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .main h3 {
-    color: #ffffffc9;
-    font-size: 2em;
-    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.7em;
+    font-weight: 800;
     letter-spacing: 1px;
     text-align: center;
-    margin: 20px 0;
+    
 }
+
 
 .main a {
     color: #fff;
@@ -215,4 +225,13 @@ ul{
     background-color: #b30b0b;
 }
 
+}
+.intro{
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+}
+#all-product{
+  align-items: center;
 }
