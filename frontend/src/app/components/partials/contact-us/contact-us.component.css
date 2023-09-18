@@ -1,49 +1,36 @@
-* {
-  justify-content: center;
-  width: 80%;
 
 
-}
-#title{
-  color: #ffffff;
-}
 .Contact_Form {
-  background: url(images/Logo-Font.jpg) no-repeat;
-  width: 83%;
-  background-size: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   margin-bottom: 3em;
-  margin-left: 8em;
+  align-items: center;
+  justify-items: center;
+
+}
+.container {
+
+  width: 40%;
+  margin-left: 10em;
+  
 
 }
 
-.overlay{
-  width: 200%;
-  background-color:  rgba(0, 0, 0, 0.6);
 
-  background-size: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-radius: 10px;
-
+.map-container {
+  height: auto;
 }
 .info {
-  padding: 2em; /* Add some padding to the content */
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00786a;
+  padding: 1em; /* Add some padding to the content */
+  height: 30em;
   color: aliceblue;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  max-width: 70%; /* Limit the width of the info section */
+  width: 40%; /* Limit the width of the info section */
 }
 
 /* Add some spacing between the elements within the info section */
@@ -66,120 +53,89 @@
 
 /* Style the email and website links */
 .info a {
-  color: #4d8cff;
-  text-decoration: none;
+  color:#f5f5dc; /* Change link color on hover to #2b5db0 */
+  text-decoration: underline;
+  font-size: 1.5em; /* Add underline on hover if desired */
 }
 
 /* Change link color on hover */
 .info a:hover {
-  color: #2b5db0;
-}
-
-.container {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  color: #005951;
 }
 
 
 
-
-.default-button {
-  background-color: #e72929;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s;
+iframe {
+  
+  width: 140%;
+height: 30em;
+  border-radius: 2;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+ 
+
 
 
 .default-button:hover {
   background-color: #b30b0b;
 }
+.Contact_Form {
+  display: flex;
+  align-items: center; /* This line can be removed to fix the alignment */
+  margin-top: 3rem;
+  border-radius: 5px;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  width: 80%;
+  justify-items: center; /* You can keep this line if needed */
+}
 
-@media (max-width: 768px) {
+
+  
+
+  
+  
+  
   
   .Contact_Form {
-    background: url(images/Logo1-Font.jpg) no-repeat;
-
-  width: 100%;
-  margin-left: 0;
-
-  background-size: 170%;
-  display: block;
-  }
-  * {
-
-    width: 100%;
-  
-  
-  }
-  .overlay{
-    width: 100%;
-    background-color:  rgba(0, 0, 0, 0.6);
-  padding-top: 4rem;
-    background-size: 100%;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 0;
-  
-    border-radius: 10px;
-  
-  }
-  .info {
-    width: 70%;
-    display: inline-block; /* Add flex display to create a horizontal layout */
-    justify-content: space-between; /* Space items evenly on the horizontal axis */
-    align-items: center; /* Center items vertically */
-    margin: 20px;
-    margin-left: 4em;
-
+   
+    align-items: flex-start; /* Align items at the top */
+    
   }
   
   .container {
-
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin-left: 4em;
+    width: 50%; /* Adjust the width as needed */
   }
-  .details{
-    
-      padding-right: 20em;
-      justify-content: center;
-      padding: 0 20px;
-     
+  
+  .map-container {
+    width: 30%; /* Adjust the width as needed */
+    height: 9.25em; /* Allow the map's height to adjust based on content */
+  }
+  @media (max-width: 768px) {
+    .Contact_Form {
+      display: block;
+      width: 100%; /* Make the form full-width on smaller screens */
+      margin-left: 0; /* Remove left margin on smaller screens */
     }
+  
+    .container {
+      width: 100%; /* Make the container full-width on smaller screens */
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  
     .info {
-      padding: 1em; /* Reduce padding for smaller screens */
-      max-width: 80%; /* Adjust the maximum width as needed */
+      width: 100%; /* Make the info section full-width on smaller screens */
     }
   
-    /* Reduce font sizes for smaller screens */
-    .info h2 {
-      font-size: 1.2rem;
+    .map-container {
+      width: 100%; /* Make the map container full-width on smaller screens */
+      height: auto; /* Allow the map's height to adjust based on content */
     }
   
-    .info p {
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem; /* Reduce margin for smaller screens */
+    iframe {
+      width: 100%; /* Make the iframe full-width on smaller screens */
+      height: auto; /* Allow the map's height to adjust based on content */
     }
-  
-    .info a {
-      font-size: 0.9rem;
-    }
-
-
   }
-  
-  
-  
-  
-  
   

@@ -51,13 +51,4 @@
   .footer-social ul li a {
     font-size: 20px;
   }
-  
-  .map-container {
-    margin-top: 20px;
-    height: 450;
-    border: 1px solid #ddd; 
-  }
-  .custom-map {
-    width: 100%; /* Adjust the map width to fit the container */
-    height: 150px; /* Set the height of the map within the container */
-  }
+ 

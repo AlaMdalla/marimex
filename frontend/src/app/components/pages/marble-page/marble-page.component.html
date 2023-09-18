@@ -13,9 +13,7 @@
       </span>
       <span class="favorite {{marble.favorite? '': 'not'}}">❤</span>
     </div>
-    <div class="rating">
-      <star-rating [stars]="marble.stars" [size]="1.8" />
-    </div>
+   
 
     <div class="descriptions">
       <span *ngFor="let origin of marble.descriptions">
