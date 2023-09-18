@@ -26,7 +26,7 @@
 
   justify-content: space-between;
   align-items: center;
-  background-color: #00786a;
+  background-color: #333333; /* Dark Gray */
   padding: 1em; /* Add some padding to the content */
   height: 30em;
   color: aliceblue;
@@ -60,7 +60,7 @@
 
 /* Change link color on hover */
 .info a:hover {
-  color: #005951;
+  color: #dcdcdc;
 }
 
 
@@ -117,6 +117,7 @@ height: 30em;
       display: block;
       width: 100%; /* Make the form full-width on smaller screens */
       margin-left: 0; /* Remove left margin on smaller screens */
+      margin-bottom: 0;
     }
   
     .container {
@@ -130,12 +131,12 @@ height: 30em;
   
     .map-container {
       width: 100%; /* Make the map container full-width on smaller screens */
-      height: auto; /* Allow the map's height to adjust based on content */
+      height: 100%; /* Allow the map's height to adjust based on content */
     }
   
     iframe {
       width: 100%; /* Make the iframe full-width on smaller screens */
-      height: auto; /* Allow the map's height to adjust based on content */
+      height: 20em; /* Allow the map's height to adjust based on content */
     }
   }
   

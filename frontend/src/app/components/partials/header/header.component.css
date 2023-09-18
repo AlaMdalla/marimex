@@ -64,7 +64,25 @@ header{
     width: 100%;
     min-width:8rem;
   }
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underlines from the link */
+    color:  #e72929; /* Set the text color for the logo */
+    font-weight: bold; /* Add some boldness to the text */
+  }
+  .logo img {
+    width: 7em; /* Adjust the width of the logo image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-right: 10px; /* Add some spacing between the image and text */
+  }
+  
   @media (max-width: 768px) {
+    .logo img {
+      width: 5em; /* Adjust the width of the logo image */
+      height: auto; /* Maintain the aspect ratio of the image */
+      margin-right: 10px; /* Add some spacing between the image and text */
+    }
     /* Adjust styles for smaller screens */
     a.logo {
       font-size:1.2rem; /* Smaller logo size */
@@ -85,3 +103,5 @@ header{
      /* Add horizontal padding to container */
   }
   }
+ 
+  
