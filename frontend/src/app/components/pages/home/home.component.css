@@ -121,7 +121,7 @@ ul{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    animation: changeBackground 9s infinite; /* 3 images x 3 seconds */
+    animation: changeBackground 15s infinite; /* 3 images x 3 seconds */
 }
 
 @keyframes changeBackground {
@@ -139,9 +139,9 @@ ul{
 /* Rest of your styling */
 
 .overlay{
-  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: linear-gradient(135deg,rgba(255,255,255,0.3),rgba(255,255,255,0));
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
      width: 100%;
 
     min-height: 60vh;
