@@ -121,7 +121,7 @@ ul{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    animation: changeBackground 15s infinite; /* 3 images x 3 seconds */
+    animation: changeBackground 24s infinite; /* 3 images x 3 seconds */
 }
 
 @keyframes changeBackground {
