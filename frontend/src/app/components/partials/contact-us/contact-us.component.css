@@ -48,20 +48,17 @@
 /* Style the address and phone details */
 .info p {
   font-size: 1rem;
-  color: #e0e0e0;
+  color: gray;
 }
 
 /* Style the email and website links */
 .info a {
-  color:#f5f5dc; /* Change link color on hover to #2b5db0 */
+  color: #dcdcdc; /* Change link color on hover to #2b5db0 */
   text-decoration: underline;
-  font-size: 1.4em; /* Add underline on hover if desired */
+  font-size: 1.2em; /* Add underline on hover if desired */
 }
 
-/* Change link color on hover */
-.info a:hover {
-  color: #dcdcdc;
-}
+
 
 
 
@@ -121,12 +118,13 @@ height: 30em;
     }
     .info a {
      
-      font-size: 1.4em; /* Add underline on hover if desired */
+      font-size: 1.2em; /* Add underline on hover if desired */
     }
   
     .container {
-      width: 100%; /* Make the container full-width on smaller screens */
-      margin-left: 0; /* Remove left margin on smaller screens */
+      width: 95%; /* Make the container full-width on smaller screens */
+      justify-content: center;
+      margin: 0.5rem;
     }
   
     .info {

@@ -8,7 +8,7 @@
         <nav>
             <ul>
                 <li *ngIf="!isAuth" >
-                    <a   routerLink="/login">Login</a>
+                    <a   routerLink="/login">Se connecter</a>
                 </li>
                 <li  *ngIf="isAuth" class="menu-container">
                     <a routerLink="/dashboard"> {{user.name}}</a>
@@ -19,7 +19,7 @@
                 </li>
                 <li>
                     <a routerLink="/cart-page">
-                        Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                        PANIER  <span *ngIf="cartQuantity">{{cartQuantity}}</span>
                     </a>  
                 </li>
                 <li  >
