@@ -19,7 +19,7 @@
   }
   
   .footer-logo img {
-    width: 100px; /* Adjust the logo size as needed */
+    width: 50px; /* Adjust the logo size as needed */
   }
   
   .footer-links ul,
@@ -51,4 +51,5 @@
   .footer-social ul li a {
     font-size: 20px;
   }
+ 
  
