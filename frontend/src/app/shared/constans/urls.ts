@@ -1,4 +1,4 @@
-const BASE_URL='https://www.marimex.tn/';
+const BASE_URL='http://localhost:5000';
 export const MARBEL_URL=BASE_URL+'/api/marble';
 export const MARBEL_TAGS_URL=MARBEL_URL+'/tags';
 export const MARBEL_BY_SEARCH_URL=MARBEL_URL+'/search/';
