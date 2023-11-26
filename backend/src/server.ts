@@ -19,17 +19,16 @@ app.use(express.json());
 
 app.use(cors({
   credentials: true,
-  origin: ["*"],
+  origin: ["http://localhost:4200"]
 }));
+const corsOptions = {
+  origin: 'https://www.marimex.tn',
+};
+
+app.use(cors(corsOptions));
 
 
 
-
-// Log middleware for tracking incoming requests
-app.use((req, res, next) => {
-  console.log(`Incoming ${req.method} request to ${req.path}`);
-  next();
-});
 
 app.use("/api/marble", marbleRouter);
 app.use("/api/users", userRouter);
