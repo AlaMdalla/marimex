@@ -1,4 +1,4 @@
-const BASE_URL='https://marimex-gmt4.onrender.com';
+const BASE_URL='https://marimex.netlify.app';
 export const MARBEL_URL=BASE_URL+'/api/marble';
 export const MARBEL_TAGS_URL=MARBEL_URL+'/tags';
 export const MARBEL_BY_SEARCH_URL=MARBEL_URL+'/search/';
