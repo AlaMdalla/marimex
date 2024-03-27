@@ -126,7 +126,7 @@ router.get("/tags", (0, express_async_handler_1.default)(function (req, res) { r
             case 1:
                 tags = _b.sent();
                 _a = {
-                    name: 'Tous'
+                    name: 'All'
                 };
                 return [4 /*yield*/, marble_model_1.MarbleModel.countDocuments()];
             case 2:

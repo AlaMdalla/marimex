@@ -19,11 +19,10 @@ app.use((0, cors_1.default)({
     credentials: true,
     origin: ["http://localhost:4200"]
 }));
-// Log middleware for tracking incoming requests
-app.use(function (req, res, next) {
-    console.log("Incoming ".concat(req.method, " request to ").concat(req.path));
-    next();
-});
+var corsOptions = {
+    origin: 'https://www.marimex.tn',
+};
+app.use((0, cors_1.default)(corsOptions));
 app.use("/api/marble", marble_router_1.default);
 app.use("/api/users", user_router_1.default);
 app.use(express_1.default.static(path_1.default.join(__dirname, '../../frontend/dist/frontend')));
