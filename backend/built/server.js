@@ -17,10 +17,10 @@ var app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
     credentials: true,
-    origin: ["http://localhost:4200"]
+    origin: ['http://localhost:4200', 'https://marimex.netlify.app', 'https://marimex.netlify.app']
 }));
 var corsOptions = {
-    origin: 'https://www.marimex.tn',
+    origin: 'https://marimex.netlify.app',
 };
 app.use((0, cors_1.default)(corsOptions));
 app.use("/api/marble", marble_router_1.default);

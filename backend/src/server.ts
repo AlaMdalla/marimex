@@ -19,10 +19,10 @@ app.use(express.json());
 
 app.use(cors({
   credentials: true,
-  origin: ["http://localhost:4200"]
+  origin: ['http://localhost:4200', 'https://marimex.netlify.app','https://marimex.netlify.app']
 }));
 const corsOptions = {
-  origin: 'https://marimex-gmt4.onrender.com',
+  origin: 'https://marimex.netlify.app',
 };
 
 app.use(cors(corsOptions));
