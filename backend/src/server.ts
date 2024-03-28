@@ -22,7 +22,7 @@ app.use(cors({
   origin: ["http://localhost:4200"]
 }));
 const corsOptions = {
-  origin: 'https://www.marimex.tn',
+  origin: 'https://marimex-gmt4.onrender.com',
 };
 
 app.use(cors(corsOptions));
