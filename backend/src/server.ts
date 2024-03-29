@@ -17,27 +17,20 @@ dbConnect();
 const app = express();
 app.use(express.json());
 
-app.use(cors({
-  credentials: true,
-  origin: ['http://localhost:4200', 'https://marimex.netlify.app','https://marimex.netlify.app','https://main--marimex.netlify.app']
-}));
 const corsOptions = {
   origin: 'https://marimex.netlify.app',
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
 
-
-
-
 app.use("/api/marble", marbleRouter);
 app.use("/api/users", userRouter);
 
-app.use(express.static(path.join(__dirname, '../../frontend/dist/frontend')));
-
-app.get('/*', (req, res) => {
-  console.log('Serving frontend index.html');
-  res.sendFile(path.join(__dirname, '../../frontend/dist/frontend/index.html'));
+// Serve favicon.ico
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/favicon.ico', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'favicon.ico'));
 });
 
 const server = http.createServer(app);
