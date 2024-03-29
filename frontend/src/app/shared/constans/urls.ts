@@ -1,4 +1,4 @@
-const BASE_URL='https://marimexbackend-1d8zvk021-alamdallas-projects.vercel.app';
+const BASE_URL='https://marimexbackend.vercel.app';
 export const MARBEL_URL=BASE_URL+'/api/marble';
 export const MARBEL_TAGS_URL=MARBEL_URL+'/tags';
 export const MARBEL_BY_SEARCH_URL=MARBEL_URL+'/search/';
